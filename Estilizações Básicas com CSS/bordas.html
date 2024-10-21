@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+        }
+        .exemplo {
+            background-color: black;
+            width: 200px;
+            height: 200px;
+        }
+        #exemplo-0 {   
+            background-color: palevioletred;
+            width: 200px;
+            height: 400px;
+            /* border-style: solid; */
+            /* border-width: 5px; */
+            /* border-width: thin; */
+            /* border-width: medium; */
+            /* border-width: thick; */
+            /* border-width: 10px 20px;  */
+            /* border-width: 10px 20px 30px; */
+            /* border-width: 10px 20px 30px 40px; */
+            /* border-width: 10px; */
+            /* border-style: none; */
+            /* border-style: dashed; */
+            /* border-style: dotted; */
+            /* border-style: double; */
+            /* border-style: groove; */
+            /* border-style: ridge; */
+            /* border-style: inset; */
+            /* border-style: outset; */
+            /* border-style: dotted dashed solid double; */
+            color: red;
+            /* border-color: purple greenyellow coral blue; */
+            /* border-color: palegreen; */
+            /* border-top: 10px solid rgb(83, 8, 84); */
+            /* border-bottom: 5px dashed red; */
+            /* border-bottom-style: double; */
+            /* border-bottom-width: 20px; */
+            border: 5px solid purple;
+            /* border-radius: 20px; */
+            /* border-radius: 20px 10px; */
+            /* border-radius: 20px 10px 30px; */
+            /* border-radius: 20px 10px 30px 50px; */
+            /* border-radius: 50px/100px; */
+            border-radius: 50%;
+        }
+        #exemplo-resumido {
+            border: 30px solid;
+            margin: 50px auto;
+            border-image: url('./stars.png') 169 / 10px / 1 round;
+        }
+        #exemplo-1 {
+            width: 200px;
+            border: 30px solid;
+            margin: 50px auto;
+            border-image-source: url('./stars.png');
+            border-image-slice: 169;
+            /* border-image-slice: 171 fill; */
+            /* border-image-width: 10px 20px 30px 40px; */
+            /* border-image-width: auto; */
+            /* border-image-repeat: repeat; */
+            /* border-image-repeat: stretch; */
+            /* border-image-repeat: round; */
+            border-image-repeat: round space;
+            border-image-outset: 30px 10px 60px 100px;
+        }
+        #exemplo-2 {
+            border: 30px solid;
+            margin: 50px auto;
+            /* border-image-source: linear-gradient(red, blue); */
+            border-image-source: linear-gradient(rgb(0, 145, 255), rgb(0, 242, 255));
+            border-image-slice: 10;
+            border-image-outset: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordas</h1>
+    <p>Podemos definir as configurações das nossas bordas através das propriedades:</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+    <h2>Exemplo:</h2>
+    <div id="exemplo-0" class="exemplo">
+        asdasdasdasd
+    </div>
+    <br>
+    <h1>Bordas com Imagens</h1>
+    <ul>
+        <li>border-image-source</li>
+        <li>border-image-width</li>
+        <li>border-image-repeat</li>
+        <li>border-image-outset</li>
+        <li>border-image-slice</li>
+    </ul>
+    <h2>Exemplo:</h2>
+    <div id="exemplo-resumido" class="exemplo">
+    </div>
+    <br>
+    <div id="exemplo-1" class="exemplo">
+    </div>
+    <br>
+    <div id="exemplo-2" class="exemplo">
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Images</title>
+    </head>
+    <body>
+        <figure>
+            <img src="car-medium.jpg" width="250" />
+            <figcaption>Descrição do veículo</figcaption>
+        </figure>
+        <img src="car-medium.jpg" width="250" />
+        <p>Descrição do veículo</p>
+        <picture>
+            <source srcset="car-small.jpg" media="(min-width: 600px)" />
+            <img src="car-medium.jpg" />
+        </picture>
+    </body>
+</html>

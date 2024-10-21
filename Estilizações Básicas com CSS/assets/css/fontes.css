@@ -1,0 +1,143 @@
+@import url("./global.css");
+
+@font-face {
+    font-family: "League Mono";
+    src: url(../fonts/LeagueMono-VF.ttf); 
+}
+
+/* @font-face {
+    font-family: Roboto;
+    src: url(../fonts/RobotoMono-Regular.ttf); 
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/RobotoMono-Bold.ttf); 
+    font-weight: bold;  
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/RobotoMono-Thin.ttf); 
+    font-weight: lighter;  
+}
+
+@font-face {
+    font-family: Batata;
+    src: url(../fonts/RobotoMono-Italic.ttf);   
+} */
+
+/* h1 {
+    font-family: Batata;
+} */
+
+p {
+    font-family: "Roboto Mono";
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    line-height: normal;
+    font-size: 20px;
+    /* line-height: 2; */
+    line-height: 200%;
+}
+
+code {
+    background-color: lightgreen;
+}
+
+#tamanho {
+    font-size: 20px;
+}
+
+#xx-small {
+    font-size: xx-small;
+}
+
+#x-small {
+    font-size: x-small;
+}
+
+#small {
+    font-size: small;
+}
+
+#medium {
+    font-size: medium;
+}
+
+#large {
+    font-size: large;
+}
+
+#x-large {
+    font-size: x-large;
+}
+
+#xx-large {
+    font-size: xx-large;
+}
+
+div {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+div p {
+    font-size: smaller;
+    /* font-size: larger; */
+    /* font-weight: lighter; */
+    font-weight: bolder;
+}
+
+#italic {
+    font-style: italic;
+}
+
+#oblique {
+    font-style: oblique;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#exemplo {
+    font-weight:  200;
+    font-variant: small-caps;
+}
+
+#ultra-condensed {
+    font-family: "League Mono";
+    font-stretch: ultra-condensed;
+}
+
+#extra-condensed {
+    font-family: "League Mono";
+    font-stretch: extra-condensed;
+}
+
+#semi-condensed {
+    font-family: "League Mono";
+    font-stretch: semi-condensed;
+}
+
+#semi-expanded {
+    font-family: "League Mono";
+    font-stretch: semi-expanded;
+}
+
+#extra-expanded {
+    font-family: "League Mono";
+    font-stretch: extra-expanded;
+}
+
+#ultra-expanded {
+    font-family: "League Mono";
+    font-stretch: ultra-expanded;
+}
+
+#exemplo-font {
+    /* font: 20px Arial, sans-serif; */
+    font: italic small-caps bold 24px/2 Georgia, serif;
+}

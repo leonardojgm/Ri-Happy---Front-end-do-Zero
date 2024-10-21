@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detona Ralph</title>
+        <link rel="stylesheet" href="./src/styles/main.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon.jpg" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="menu">
+                <div class="menu-time">
+                    <h2 class="menu-title">Tempo</h2>
+                    <h2 id="time-left">60</h2>
+                </div>
+                <div class="menu-score">
+                    <h2 class="menu-title">Pontuação</h2>
+                    <h2 id="score">0</h2>
+                </div>
+                <div class="menu-lives">
+                    <img class="lives" src="./src/images/player.png" alt="foto do jogador"/>
+                    <h2>x<span id="lives">3</span></h2>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-row">
+                    <div class="square enemy" id="1"></div>
+                    <div class="square" id="2"></div>
+                    <div class="square" id="3"></div>
+                </div>
+                <div class="panel-row">
+                    <div class="square" id="4"></div>
+                    <div class="square" id="5"></div>
+                    <div class="square" id="6"></div>
+                </div>
+                <div class="panel-row">
+                    <div class="square" id="7"></div>
+                    <div class="square" id="8"></div>
+                    <div class="square" id="9"></div>
+                </div>
+            </div>
+            <button type="button" id="play">Jogar</button>
+            <div class="rules">
+                <p>10 pontos = 1 vida</p>
+                <p>20 pontos = 10 segundos</p>
+            </div>
+        </div>
+        <script defer src="./src/scripts/engine.js"></script>
+    </body>
+</html>

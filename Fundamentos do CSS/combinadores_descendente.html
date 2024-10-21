@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trilha de CSS</title>
+        <style>
+            /*
+                Combinadores: qual tipo de relação entre 2 seletores.
+                1. Combinador descendente (espaço)
+                2. Combinador filho (>)
+                3. Combinador irmão adjacente (+)
+                4. Combinador irmão em geral (~)
+
+                [SELETOR] [COMBINADOR] [SELETOR]
+            */
+            li {
+                color: red;
+            }
+            li li {
+                color: green;
+            }
+            #lista-01 li {
+                background: lightblue;
+            }
+            .fundo-verde li {
+                background: lightgreen;
+            }
+            .fundo-azul li {
+                background: lightblue;
+            }
+            .fundo-verde #sublista-01 li {
+                color: black;
+            }
+            div p {
+                background: lightgreen;
+            }
+            div > p {
+                color: red;
+            }
+            .fundo-azul > p {
+                background: lightblue;
+            }
+            div + p {
+                color: tomato;
+            }
+            .fundo-azul ~ p {
+                background: lightyellow;
+            }
+            .fundo-verde span + p {
+                background: darkgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="fundo-verde" id="lista-01">
+                <div>Item 1</div>
+                <ul id="sublista-01">
+                    <li>Subitem A</li>
+                    <li>Subitem B</li>
+                </ul>
+            </li>
+            <li class="fundo-verde" id="lista-02">
+                <div>Item 2</div>
+                <ul id="sublista-02">
+                    <li>Subitem A</li>
+                    <li>Subitem B</li>
+                </ul>
+            </li>
+            <li class="fundo-azul" id="lista-03">
+                <div>Item 3</div>
+                <ul id="sublista-03">
+                    <li>Subitem A</li>
+                    <li>Subitem B</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="fundo-verde">
+            <p>Parágrafo 1, dentro da div</p>
+            <p>Parágrafo 2, dentro da div</p>
+            <span>
+                <p>Parágrafo 3, dentro da div, dentro do span</p>
+            </span>
+        </div>
+        <div class="fundo-verde">
+            <p>Parágrafo 4, dentro da div</p>
+            <p>Parágrafo 5, dentro da div</p>
+            <span>
+                <p>Parágrafo 6, dentro da div, dentro do span</p>
+            </span>
+        </div>
+        <div class="fundo-azul">
+            <p>Parágrafo 7, dentro da div</p>
+            <p>Parágrafo 8, dentro da div</p>
+            <span>
+                <p>Parágrafo 9, dentro da div, dentro do span</p>
+            </span>
+        </div>
+        <p>Parágrafo 10, fora da div</p>
+        <p>Parágrafo 11, fora da div</p>
+        <div class="fundo-verde">
+            <p>Elemento 01</p>
+            <p>Elemento 02</p>
+            <span>
+                <p>Elemento 03</p>
+                <p>Elemento 04</p>
+            </span>
+            <p>Elemento 05</p>
+            <p>Elemento 06</p>
+        </div>
+    </body>
+</html>

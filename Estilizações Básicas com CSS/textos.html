@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        #transform {
+            /* text-transform: none; */
+            /* text-transform: capitalize; */
+            /* text-transform: uppercase; */
+            text-transform: lowercase;
+            /* text-transform: initial; */
+            /* text-transform: inherit; */
+        }
+
+        .exemplo {
+            width: 370px;
+            border: 1px solid black;
+        }
+
+        #align {
+            padding: 10px;
+            background-color: lavender;
+            /* text-align: left; */
+            /* text-align: right; */
+            /* text-align: center; */
+            text-align: justify;
+        }
+
+        h1 + p {
+            color: blue;
+            /* text-decoration: line-through; */
+            text-decoration: overline;
+            /* text-decoration: underline; */
+            /* text-decoration: initial; */
+            /* text-decoration: inherit; */
+            text-decoration-line: underline;
+            /* text-decoration-style: solid; */
+            /* text-decoration-style: double; */
+            /* text-decoration-style: dashed; */
+            /* text-decoration-style: wavy; */
+            /* text-decoration-color: red; */
+            /* text-decoration-thickness: 1px; */
+            text-decoration: underline wavy red 2px;
+        }
+
+        a {
+            text-decoration: none; 
+        }
+
+        #ident {
+            text-indent: 30px;
+            /* text-indent: -30px; */
+        }
+        
+        #exemplo-letter-spacing {
+            letter-spacing: 2px;
+            /* letter-spacing: -1px; */
+        }
+
+        #exemplo-word-spacing {
+            word-spacing: 20px;
+            /* word-spacing: -3px; */
+        }
+
+        .exemplo-white-space {
+            width: 200px;
+            background-color: chartreuse;
+        }
+
+        span {
+            background-color: seagreen;
+            color: white;
+        }
+
+        #nowrap {
+            white-space: nowrap;
+        }
+
+        #pre {
+            white-space: pre;
+        }
+
+        #pre-line {
+            white-space: pre-line;
+        }
+
+        #pre-wrap {
+            white-space: pre-wrap;
+        }
+
+        #break-spaces {
+            white-space: break-spaces;
+        }
+
+        .exemplo-word-wrap {
+            width: 120px;
+            color: black;
+            background-color: blueviolet;
+            word-wrap: normal;
+        }
+
+        #break-word {
+            word-wrap: break-word;
+        }
+
+        .exemplo-word-break {
+            width: 120px;
+            color: black;
+            background-color: aquamarine;
+            word-break: normal;
+        }
+
+        #break-word {
+            word-break: break-word;
+        }
+
+        #break-all {
+            word-break: break-all;
+        }
+
+        #keep-all {
+            word-break: keep-all;
+        }
+
+        .exemplo-writing-mode {
+            width: 120px;
+            height: 120px;
+            color: black;
+            background-color: chartreuse;
+        }
+
+        #exemplo-01 {
+            writing-mode: horizontal-tb;
+        }
+
+        #exemplo-02 {
+            writing-mode: vertical-rl;
+        }
+
+        #exemplo-03 {
+            writing-mode: vertical-lr;
+        }
+
+        .exemplo-text-overflow {
+            width: 200px;
+            color: black;
+            background-color: chartreuse;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #exemplo-clip {
+            text-overflow: clip;
+        }
+
+        #exemplo-ellipsis {
+            text-overflow: ellipsis;
+        }
+
+        #exemplo-string {
+            text-overflow: 'Ver mais >'; /*somente Firefox*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>text-transform</code></h1>
+    <p id="transform">É RESPOSNÁVEL por definir quais caracteres vão estar em Maiúsculo, minúsculo, etc.</p>
+    <h1>Propriedade <code>text-align</code></h1>
+    <p>Essa propriedade é reponsável por alinhar o nosso texto no nosso elemento.</p>
+    <br>
+    <br>
+    <p id="align" class="exemplo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nostrum totam tempore blanditiis dolor quibusdam obcaecati ut sapiente sunt! Totam necessitatibus nam sit. Deleniti porro consequuntur veniam commodi, dolorum cum!
+    </p>
+    <h1>Propriedade <code>text-decoration</code></h1>
+    <p>Adiciona ou remove linhas no nosso texto: sejam linhas em cima, no meio ou embaixo.</p>
+    <p>É uma propriedade abreviada de: 
+        <ul>
+            <li><code>text-decoration-line</code></li>
+            <li><code>text-decoration-style</code></li>
+            <li><code>text-decoration-color</code></li>
+            <li><code>text-decoration-thickness</code></li>
+        </ul>
+    </p>
+    <a href="#">Link de Exemplo</a>
+    <s>Texto de exemplo</s>
+    <h1>Propriedade <code>text-ident</code></h1>
+    <p>Define o recuo da primeira linha no nosso texto. Exemplo:</p>
+    <p id="ident">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur possimus ea ullam sunt illo, assumenda non perferendis ipsam eaque doloribus! Architecto animi quasi unde dolore molestias ex eum maiores officia!</p>
+    <h1>Propriedade <code>letter-spacing</code></h1>
+    <p id="exemplo-letter-spacing">Adiciona um espaçamento entre cada CARACTERE do seu texto. Como o nome já diz, espaçamento entre as letras</p>
+    <h1>Propriedade <code>word-spacing</code></h1>
+    <p id="exemplo-word-spacing">Adiciona um espaçamento entre cada PALAVRA do seu texto. Como o nome já diz, espaçamento entre as palavras</p>
+    <h1>Propriedade <code>white-space</code></h1>
+    <p>Define como os espaços em branco do texto de um determinado elemento é tratado</p>
+    <i>Exemplos:</i>
+    <code>white-space: normal;</code>
+    <p id="normal" class="exemplo-white-space">
+        <span>Lorem         ipsum dolor sit amet consectetur, adipisicing elit. 
+            Pariatur possimus ea ullam sunt illo, assumenda non perferendis ipsam eaque doloribus!                                           
+            Architecto animi quasi unde dolore molestias ex eum maiores officia!</span>
+    </p>
+    <code>white-space: nowrap;</code>
+    <p id="nowrap" class="exemplo-white-space">
+        <span>Lorem         ipsum dolor sit amet consectetur, adipisicing elit. 
+            Pariatur possimus ea ullam sunt illo, assumenda non perferendis ipsam eaque doloribus!                                           
+            Architecto animi quasi unde dolore molestias ex eum maiores officia!</span>
+    </p>
+    <code>white-space: pre;</code>
+    <p id="pre" class="exemplo-white-space">
+        <span>Lorem         ipsum dolor sit amet consectetur, adipisicing elit. 
+            Pariatur possimus ea ullam sunt illo, assumenda non perferendis ipsam eaque doloribus! 
+            Architecto animi quasi unde dolore molestias ex eum maiores officia!</span>
+    </p>
+    <code>white-space: pre-line;</code>
+    <p id="pre-line" class="exemplo-white-space">
+        <span>Lorem         ipsum dolor sit amet consectetur, adipisicing elit. 
+            Pariatur possimus ea ullam sunt illo, assumenda non perferendis ipsam eaque doloribus!                                          
+            Architecto animi quasi unde dolore molestias ex eum maiores officia!</span>
+    </p>
+    <code>white-space: pre-wrap;</code>
+    <p id="pre-wrap" class="exemplo-white-space">
+        <span>Lorem         ipsum dolor sit amet consectetur, adipisicing elit. 
+            Pariatur possimus ea ullam sunt illo, assumenda non perferendis ipsam eaque doloribus!                                           
+            Architecto animi quasi unde dolore molestias ex eum maiores officia!</span>
+    </p>
+    <code>white-space: break-spaces;</code>
+    <p id="break-spaces" class="exemplo-white-space">
+        <span>Lorem         ipsum dolor sit amet consectetur, adipisicing elit. 
+            Pariatur possimus ea ullam sunt illo, assumenda non perferendis ipsam eaque doloribus!                                           
+            Architecto animi quasi unde dolore molestias ex eum maiores officia!</span>
+    </p>
+    <h1>Propriedade <code>word-wrap</code></h1>
+    <p>Define, caso uma palavra seja muito grande para caber em uma linha, se ela será quebrada em qualquer caractere para que uma parte dela fique na linha e o restante na próxima, ou se não, toda palavra deve ficar na mesma linha e ultrapassar os limites que definimos para o elemento.</p>
+    <code>word-wrap: normal;</code>
+    <p class="exemplo-word-wrap">
+        Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+    </p>
+    <code>word-wrap: break-word;</code>
+    <p id="break-word" class="exemplo-word-wrap">
+        Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+    </p>
+    <h1>Propriedade <code>word-break</code></h1>
+    <p>Define quando o nosso texto deve ter uma quebra de linha.</p>
+    <code>word-break: normal;</code>
+    <p class="exemplo-word-break">
+        Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS スタイルトレイルスタイルトレイルスタイルトレイル
+    </p>
+    <code>word-break: break-all;</code>
+    <p id="break-all" class="exemplo-word-break">
+        Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS スタイルトレイルスタイルトレイルスタイルトレイル
+    </p>
+    <code>word-break: keep-all;</code>
+    <p id="keep-all" class="exemplo-word-break">
+        Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS スタイルトレイルスタイルトレイルスタイルトレイル
+    </p>
+    <h1>Propriedade <code>writing-mode</code></h1>
+    <p>Define a orientação do texto (vertical ou horizontal).</p>
+    <i>Exemplos:</i>
+    <code>writing-mode: horizontal-tb;</code>
+    <p id="exemplo-01" class="exemplo-writing-mode">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+    <br>
+    <code>writing-mode: vertical-rl;</code>
+    <p id="exemplo-02" class="exemplo-writing-mode">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+    <br>
+    <code>writing-mode: vertical-lr;</code>
+    <p id="exemplo-03" class="exemplo-writing-mode">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+    <h1>Propriedade <code>text-overflow</code></h1>
+    <p>Define o que deve ser feito com a parte do texto que passou do nosso elemento.</p>
+    <i>Exemplos:</i>
+    <code>text-overflow: clip;</code>
+    <p id="exemplo-clip" class="exemplo-text-overflow">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+    <br>
+    <code>text-overflow: ellipsis;</code>
+    <p id="exemplo-ellipsis" class="exemplo-text-overflow">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+    <br>
+    <code>text-overflow: string;</code>
+    <p id="exemplo-string" class="exemplo-text-overflow">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+</body>
+</html>

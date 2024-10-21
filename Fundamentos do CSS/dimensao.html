@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trilha de CSS</title>
+        <style>
+            /*
+            * Propriedades Básicas do CSS
+            * width: largura
+            * height: altura
+            * max-width e min-width
+            * min-height e max-height
+            * margin: espaçamento por fora dos elementos
+            *   Um valor: aplica nos 4 lados
+            *   Dois valores: em cima e embaixo
+            *   Tres valores: em cima, lados e embaixo
+            *   Quatro valores: em cima, direita, embaixo e esquerda
+            * margin-top
+            * margin-botton
+            * margin-left
+            * margin-right
+            * padding: espaçamento por dentro dos elementos
+            *   Um valor: aplica nos 4 lados
+            *   Dois valores: em cima e embaixo
+            *   Tres valores: em cima, lados e embaixo
+            *   Quatro valores: em cima, direita, embaixo e esquerda
+            * padding-top
+            * padding-botton
+            * padding-left
+            * padding-right
+            * width = largura + borda + padding
+            *   200px + 20px + 20px = 240px
+            */
+            div {
+                background: lightblue;
+                width: auto;
+                height: 300px;
+            }
+            button {
+                background: pink;
+                min-width: 200px;
+                max-width: 500px;
+                min-height: 300px;
+                max-height: 500px;
+            }
+            #div-01 {
+                background: lightblue;
+                width: 200px;
+                height: 300px;
+            }
+            #div-02 {
+                background: lightgreen;
+                height: inherit;
+                margin: 20px auto;
+            }
+            .margin {
+                width: 200px;
+                color: white;
+            }
+            #elemento-01 {
+                background: orange;
+                margin: 20px 10px 40px;
+                padding: 20px 40px 10px 60px;
+                box-sizing: content-box;
+            }
+            #elemento-02 {
+                background: purple;
+                margin-top: 10px;
+                margin-left: 25px;
+                margin-right: 30px;
+                margin-bottom: 50px;
+                padding-top: 10px;
+                padding-left: 30px;
+                padding-right: 50px;
+                padding-bottom: 70px;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div>Trilha de CSS</div> 
+        <button>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat facere tempora cum sit provident dicta itaque tenetur sint, repudiandae nobis dolores hic modi doloremque quod ratione possimus numquam. Fuga!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat facere tempora cum sit provident dicta itaque tenetur sint, repudiandae nobis dolores hic modi doloremque quod ratione possimus numquam. Fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat facere tempora cum sit provident dicta itaque tenetur sint, repudiandae nobis dolores hic modi doloremque quod ratione possimus numquam. Fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat facere tempora cum sit provident dicta itaque tenetur sint, repudiandae nobis dolores hic modi doloremque quod ratione possimus numquam. Fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat facere tempora cum sit provident dicta itaque tenetur sint, repudiandae nobis dolores hic modi doloremque quod ratione possimus numquam. Fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat facere tempora cum sit provident dicta itaque tenetur sint, repudiandae nobis dolores hic modi doloremque quod ratione possimus numquam. Fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat facere tempora cum sit provident dicta itaque tenetur sint, repudiandae nobis dolores hic modi doloremque quod ratione possimus numquam. Fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat facere tempora cum sit provident dicta itaque tenetur sint, repudiandae nobis dolores hic modi doloremque quod ratione possimus numquam. Fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat facere tempora cum sit provident dicta itaque tenetur sint, repudiandae nobis dolores hic modi doloremque quod ratione possimus numquam. Fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat facere tempora cum sit provident dicta itaque tenetur sint, repudiandae nobis dolores hic modi doloremque quod ratione possimus numquam. Fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat facere tempora cum sit provident dicta itaque tenetur sint, repudiandae nobis dolores hic modi doloremque quod ratione possimus numquam. Fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat facere tempora cum sit provident dicta itaque tenetur sint, repudiandae nobis dolores hic modi doloremque quod ratione possimus numquam. Fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat facere tempora cum sit provident dicta itaque tenetur sint, repudiandae nobis dolores hic modi doloremque quod ratione possimus numquam. Fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem 
+        </button> 
+        <div id="div-01">
+            Sou a div 01
+            <div id="div-02">
+                Sou a div-02
+            </div>
+        </div>
+        <div id="elemento-01" class="margin">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed rem molestiae inventore accusantium pariatur excepturi quae! Tenetur obcaecati reiciendis quidem perferendis. Veniam molestiae deleniti a blanditiis odio recusandae atque dignissimos?
+        </div>
+        <div id="elemento-02" class="margin">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed rem molestiae inventore accusantium pariatur excepturi quae! Tenetur obcaecati reiciendis quidem perferendis. Veniam molestiae deleniti a blanditiis odio recusandae atque dignissimos?
+        </div>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        .exemplo {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 5px solid orange;
+            color: white;
+            padding: 20px;
+        }
+
+        .exemplo img {
+            width: 50%;
+            opacity: .9;
+        }
+
+        .exemplo-overflow {
+            background-color: orange;
+            border: 3px solid purple;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+        }
+
+        #hidden {
+            overflow: hidden;
+        }
+
+        #scroll {
+            overflow: scroll;
+        }
+
+        #auto {
+            overflow: auto;
+        }
+
+        #exemplo-1 {
+            white-space: nowrap;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h2>Propriedade <code>opacity</code></h2>
+    <p>Define o nível de opacidade (transparência) de um elemento</p>
+    <i>Exemplo:</i> <br><br><br>
+    <div class="exemplo">
+        <h3>Trilha de CSS</h3>
+        <p>
+            Conhecendo as propriedades CSS uma a uma!
+        </p>
+        <img src="https://www.ifsc.edu.br/o/adaptive-media/image/2294269/Preview-1000x0/dio.png?t=1625144670996" alt="Trilha de CSS">
+    </div>
+    <h2>Propriedade <code>overflow</code></h2>
+    <p>Controla como o conteúdo deve ser exibido caso ultrapasse os limites do container</p>
+    <i>Exemplos:</i> <br><br><br>
+    <code>overflow: visible;</code>
+    <div class="exemplo-overflow">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eius inventore, aspernatur autem, illum quidem dolorem quia totam excepturi asperiores iste alias consequatur velit explicabo, perspiciatis similique? Ullam, nobis explicabo.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eius inventore, aspernatur autem, illum quidem dolorem quia totam excepturi asperiores iste alias consequatur velit explicabo, perspiciatis similique? Ullam, nobis explicabo.</p>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <code>overflow: hidden;</code>
+    <div id="hidden" class="exemplo-overflow">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eius inventore, aspernatur autem, illum quidem dolorem quia totam excepturi asperiores iste alias consequatur velit explicabo, perspiciatis similique? Ullam, nobis explicabo.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eius inventore, aspernatur autem, illum quidem dolorem quia totam excepturi asperiores iste alias consequatur velit explicabo, perspiciatis similique? Ullam, nobis explicabo.</p>
+    </div>
+    <br><br>
+    <code>overflow: scroll;</code>
+    <div id="scroll" class="exemplo-overflow">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eius inventore, aspernatur autem, illum quidem dolorem quia totam excepturi asperiores iste alias consequatur velit explicabo, perspiciatis similique? Ullam, nobis explicabo.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eius inventore, aspernatur autem, illum quidem dolorem quia totam excepturi asperiores iste alias consequatur velit explicabo, perspiciatis similique? Ullam, nobis explicabo.</p>
+    </div>
+    <br><br>
+    <code>overflow: auto;</code>
+    <div id="auto" class="exemplo-overflow">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eius inventore, aspernatur autem, illum quidem dolorem quia totam excepturi asperiores iste alias consequatur velit explicabo, perspiciatis similique? Ullam, nobis explicabo.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eius inventore, aspernatur autem, illum quidem dolorem quia totam excepturi asperiores iste alias consequatur velit explicabo, perspiciatis similique? Ullam, nobis explicabo.</p>
+    </div>
+    <br><br>
+    <code>overflow-x e overflow-y: ;</code>
+    <div id="exemplo-1" class="exemplo-overflow">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eius inventore, aspernatur autem, illum quidem dolorem quia totam excepturi asperiores iste alias consequatur velit explicabo, perspiciatis similique? Ullam, nobis explicabo.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eius inventore, aspernatur autem, illum quidem dolorem quia totam excepturi asperiores iste alias consequatur velit explicabo, perspiciatis similique? Ullam, nobis explicabo.</p>
+    </div>
+</body>
+</html>
