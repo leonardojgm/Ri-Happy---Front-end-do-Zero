@@ -30,8 +30,6 @@ function gameOver() {
     clearInterval(state.actions.countDownTimerId);
     clearInterval(state.actions.timerId);
     alert("Fim de Jogo! O seu resultado foi: " + state.values.result);
-
-    resetValues()
 }
 
 function playSound(audioName) {
@@ -71,7 +69,7 @@ function addListenerHitBox() {
     state.view.squares.forEach((square) => {
         square.addEventListener("mousedown", () => {
             // alert("clicou");
-            if (square.id === state.values.hitPosition) {
+            if (state.values.gameStart && square.id === state.values.hitPosition) {
                 playSound("hit");
 
                 state.values.result++;
